@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Loan Application</h1>
+    <form  onsubmit="return validateForm()" >
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+        <div class="formdesign" id="loanamount">
+           Pan : <input type="pan" name="fpan" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="loanamount">
+            Loan amount: <input type="loan amount" name="floan" required><b><span class="formerror"></span></b>
+        </div>
+        
+       
+
+        <input class="but" type="submit" value="Submit">
+
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
